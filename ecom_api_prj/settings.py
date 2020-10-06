@@ -52,8 +52,12 @@ WSGI_APPLICATION = 'ecom_api_prj.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dbtest',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 
@@ -86,9 +90,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
-REST_FRAMEWORK={
-'DEFAULT_AUTHENTICATION_CLASSES':('rest_framework.authentication.TokenAuthentication',),
-'DEFAULT_PERMISSION_CLASSES':('rest_framework.permissions.IsAuthenticated',)
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': ('rest_framework.authentication.TokenAuthentication',),
+    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAuthenticated',)
 }
 
 AUTH_USER_MODEL = 'ecom_api_app.UserProfile'
