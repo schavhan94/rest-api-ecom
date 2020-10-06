@@ -6,7 +6,6 @@ from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
 router.register('userrole', views.UserRoleViewSet)
-router.register('userprofile', views.UserProfileViewSet)
 router.register('product', views.ProductNameViewSet)
 router.register('order', views.OrderViewSet)
 router.register('orderitem', views.OrderItemViewSet)
