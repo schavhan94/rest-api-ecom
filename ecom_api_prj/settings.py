@@ -4,7 +4,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = ')e!0!_!v-ufu71uj+m!=0!8p_gl^k*oqqdyh%@1!e30%rty+&p'
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['restmagic.herokuapp.com']
 
