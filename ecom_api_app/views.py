@@ -83,4 +83,5 @@ class ApiRoot(ListModelMixin, GenericViewSet):
                         "product": "https://restmagic.herokuapp.com/product/",
                         "order": "https://restmagic.herokuapp.com/order/",
                         "orderitem": "https://restmagic.herokuapp.com/orderitem/",
-                        "createuser": "https://restmagic.herokuapp.com/createuser/"})
+                        "createuser": "https://restmagic.herokuapp.com/createuser/",
+                        "login": "https://restmagic.herokuapp.com/login/"})
