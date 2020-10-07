@@ -12,6 +12,7 @@ router.register('product', views.ProductNameViewSet)
 router.register('order', views.OrderViewSet)
 router.register('orderitem', views.OrderItemViewSet)
 router.register('createuser', views.CreateUserView)
+router.register('', views.ApiRoot, basename='Home')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
