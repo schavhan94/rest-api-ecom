@@ -79,7 +79,6 @@ class ApiRoot(ListModelMixin, GenericViewSet):
     permission_classes = [AllowAny, ]
     authentication_classes = []
     def list(self, request, *args, **kwargs):
-        print('hiii')
         return Response({"userrole": "https://restmagic.herokuapp.com/userrole/",
                         "product": "https://restmagic.herokuapp.com/product/",
                         "order": "https://restmagic.herokuapp.com/order/",
