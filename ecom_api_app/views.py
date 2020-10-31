@@ -1,4 +1,3 @@
-from rest_framework.response import Response
 from ecom_api_app import serializers
 from rest_framework import viewsets
 from ecom_api_app.models import (

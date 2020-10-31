@@ -6,7 +6,7 @@ SECRET_KEY = ')e!0!_!v-ufu71uj+m!=0!8p_gl^k*oqqdyh%@1!e30%rty+&p'
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['restmagic.herokuapp.com']
+ALLOWED_HOSTS = ['restmagic.herokuapp.com','localhost','127.0.0.1']
 
 INSTALLED_APPS = [
     'django.contrib.admin',

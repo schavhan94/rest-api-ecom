@@ -12,7 +12,6 @@ UserRole_CHOICES = (
     ("Vendor", "Vendor"),
 )
 
-
 class UserRole(models.Model):
     title = models.CharField(
         max_length=20,
