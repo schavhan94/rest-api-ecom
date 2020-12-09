@@ -6,11 +6,10 @@ from .models import (UserRole, UserProfile, ProductName, Order, OrderItem,)
 
 
 class UserRoleAdmin(admin.ModelAdmin):
+
     list_display = ["id", "title", ]
 
-
 admin.site.register(UserRole, UserRoleAdmin)
-
 
 class UserAdmin(admin.ModelAdmin):
      list_display = ["id", "email", "is_active", "userrole"]
